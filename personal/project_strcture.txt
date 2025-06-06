@@ -1,0 +1,38 @@
+optimizer/
+├── data/
+│   └── Supply chain logistics problem.xlsx
+│
+├── src/
+│   ├── data_loader.py         # Loads raw DataFrames from Excel/CSV
+│   ├── sheet_cleaner.py       # Cleans and validates each DataFrame
+│   ├── constraints.py         # Encodes all business and network constraints
+│   ├── cost_functions.py      # Functions for cost calculations (freight, storage, etc.)
+│   ├── optimizer.py           # Optimization logic and solver interface
+│   ├── post_processor.py      # Analyzes and visualizes optimization results
+│   └── utils.py               # Shared utility functions
+│
+├── notebooks/
+│   └── exploratory_analysis.ipynb
+│
+├── results/
+│   └── optimized_routes.csv
+│
+├── tests/
+│   ├── test_data_loader.py    # Tests for data loading
+│   ├── test_sheet_cleaner.py  # Tests for cleaning functions
+│   └── test_optimizer.py      # Tests for optimization logic
+│
+├── main.py                    # Entry point: orchestrates the workflow
+├── requirements.txt           # Python dependencies
+└── README.md                  # Project overview and instructions
+
+
+echo "# Multimodal-Cost-Optimisation-with-Service-Level-Constraints" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/vinesh1054/Multimodal-Cost-Optimisation-with-Service-Level-Constraints.git
+git push -u origin main
+git pull origin main --rebase
+git push origin main
